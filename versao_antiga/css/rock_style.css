@@ -1,40 +1,93 @@
 html,body{
 	background-color: #EFF0F0;
+	font-family: Roboto;
 }
 
 blockquote{
 	background-color: #FFF;
 	border-left: 5px solid #9E9E9E;
 }
+.navbar-brand{
+    padding: 10px 15px;
+}
+.navbar-brand img{
+	max-height: 30px;
+}
+nav.navbar.navbar-fixed-top.navbar-inverse{
+	border-bottom: 0px;
+	padding-top: 3.5px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+
+	border-bottom: 3.5px solid #222;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background-color: inherit;
+	color: #FFF;
+	border-bottom: 3.5px solid #3BBBD1 ;
+}
+nav.navbar.navbar-fixed-top.navbar-inverse>.container{
+	padding-left: 0px;
+}
+
 .sublist-group{
 	display: none;
 }
-.sublist-group .list-group-item{  
+.sublist-group .list-group-item a{  
     margin: 0px 0px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 .sublist-group li:first-child{ 
 	margin-top: 5px;
 }
 .sublist-group:last-child{ 
-	margin-bottom: -5px;
+	margin-bottom: 0px;
 }
 .list-group-item{	
     border: 0px;
+    border-radius: 0px !important;
+    margin: 0px;
+
     background-color: transparent; 
     font-weight: normal;
-    padding: 5px 5px;
+    padding: 0px;
 }
-.list-group-item a:hover, .list-group-item a:active,.list-group-item a:focus{
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+	background-color: transparent;
+}
+#content a{
+	color:#3BBBD1;
+}
+#content a:hover{
 	text-decoration: none;
+	opacity: 0.7;
 }
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{	
-    color: #000;
+.list-group-item a{	
+    padding: 0px;
+    color: #767676;
+}
+.list-group-item.active > a:first-child, .list-group-item > a:focus:first-child, .list-group-item > a:hover:first-child{	
+    color: #3BBBD1;
     background-color: transparent;    
     border: 0px;
-    border-left: 3px solid #337ab7;
+    border-left: 2px solid #3BBBD1 ;
+    margin-left: -7px;
+    padding-left: 5px;
     text-decoration: none;
+}
 
+.sublist-group > .list-group-item.active > a:first-child, .sublist-group > .list-group-item > a:focus:first-child, .sublist-group > .list-group-item > a:hover:first-child{
+    padding-left: 25px;
+    margin-left: -7px;
+}
+.logo-exemplo{
+	margin: 25px 0px 0px 0px;
+}
+
+.logo-exemplo img{
+	max-height: 40px;
 }
 
 /*.anchor{

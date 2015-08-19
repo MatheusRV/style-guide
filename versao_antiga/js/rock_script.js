@@ -8,11 +8,11 @@ $(document).ready(function(){
 		$('html, body').animate({
 		scrollTop: $(id).offset().top - nav_height
 		}, 500, function(){
-			$('.list-group-item.active').removeClass('active');
+			$('.list-group-item.active').toggleClass('active');
 			$('.parent-list-group:not(.active)').find('.sublist-group').css("display", "none");
-    		$(event.target).parent('.list-group-item').addClass('active');
+    		$(event.target).parent('.list-group-item').toggleClass('active');
     		// Sublista nivel 1
-		  	$(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').addClass('active');
+		  	$(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').toggleClass('active');
 		  	// Sublista nivel 2
 		  	// $(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').parent('.list-group').parent('.parent-list-group').addClass('active');
 		  	$('.parent-list-group.active').find('.sublist-group:first').css("display", "block");
@@ -22,8 +22,8 @@ $(document).ready(function(){
 	 
 	$(window).on('scroll', function () {
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-			$('.list-group-item.active').removeClass('active');
-		  	$('a[href="#concluindo"]').parent('.list-group-item').addClass('active');
+			$('.list-group-item.active').toggleClass('active');
+		  	$('a[href="#concluindo"]').parent('.list-group-item').toggleClass('active');
 		}
 		else{
 			var cur_pos = $(this).scrollTop();
@@ -32,9 +32,9 @@ $(document).ready(function(){
 				    bottom = top + $(this).outerHeight();
 
 				if (cur_pos >= top && cur_pos <= bottom) {
-					$('.list-group-item.active').removeClass('active');
+					$('.list-group-item.active').toggleClass('active');
 					$('.parent-list-group:not(.active)').find('.sublist-group').css("display", "none");
-				  	$('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').addClass('active');
+				  	$('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').toggleClass('active');
 				  	// Sublista nivel 1
 				  	$('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').parent('.list-group').parent('.parent-list-group').addClass('active');
 				  	// Sublista nivel 2
