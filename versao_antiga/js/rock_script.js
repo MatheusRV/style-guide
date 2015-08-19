@@ -14,7 +14,7 @@ $(document).ready(function(){
     		// Sublista nivel 1
 		  	$(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').addClass('active');
 		  	// Sublista nivel 2
-		  	$(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').parent('.list-group').parent('.parent-list-group').addClass('active');
+		  	// $(event.target).parent('.list-group-item').parent('.list-group').parent('.parent-list-group').parent('.list-group').parent('.parent-list-group').addClass('active');
 		  	$('.parent-list-group.active').find('.sublist-group:first').css("display", "block");
 		});
 		return false;
@@ -38,14 +38,10 @@ $(document).ready(function(){
 				  	// Sublista nivel 1
 				  	$('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').parent('.list-group').parent('.parent-list-group').addClass('active');
 				  	// Sublista nivel 2
-				  	$('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').parent('.list-group').parent('.parent-list-group').parent('.list-group').parent('.parent-list-group').addClass('active');
+				  	// $('a[href="#'+$(this).attr('id')+'"]').parent('.list-group-item').parent('.list-group').parent('.parent-list-group').parent('.list-group').parent('.parent-list-group').addClass('active');
 				  	$('.parent-list-group.active').find('.sublist-group:first').css("display", "block");
 				}
 			});
 		}
 	});
-
-	if($('.parent-list-group').hasClass('active')){
-		$('.parent-list-group.active').find('.sublist-group:first').css("display", "block");
-	}
 });
