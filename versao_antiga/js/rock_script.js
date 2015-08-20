@@ -44,4 +44,20 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+	var copyBtn = document.querySelector('#copiar-email');
+	copyBtn.addEventListener('click', function () {
+	  var urlField = document.querySelector('#email-exemplo');
+	   
+	  // create a Range object
+	  var range = document.createRange();  
+	  // set the Node to select the "range"
+	  range.selectNode(urlField);
+	  // add the Range to the set of window selections
+	  window.getSelection().addRange(range);
+	   
+	  // execute 'copy', can't 'cut' in this case
+	  document.execCommand('copy');
+	  window.getSelection().removeAllRanges();
+	}, false);
 });
