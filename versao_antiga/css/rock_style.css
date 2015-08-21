@@ -8,6 +8,29 @@ blockquote{
 	border: 0px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
+
+h1{
+	margin-top: 0px;
+}
+
+h1, h2, h3, h4{
+	margin-bottom: 25px;
+}
+
+p{
+	margin-bottom: 25px;
+	line-height: 1.7;
+	font-size: 16px;
+}
+li>p{
+	margin-bottom: 15px;
+}
+ul li:last-child p{
+	margin-bottom: 25px;
+}
+.strong{
+	font-weight: bold;
+}
 .navbar-brand{
     padding: 10px 15px;
 }
@@ -71,7 +94,10 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
     padding: 0px;
     color: #767676;
 }
-.list-group-item.active > a:first-child, .list-group-item > a:focus:first-child, .list-group-item > a:hover:first-child{	
+.list-group-item > a:focus:first-child{
+	text-decoration: none;
+}
+.list-group-item.active > a:first-child, .list-group-item > a:hover:first-child{	
     color: #3BBBD1;
     background-color: transparent;    
     border: 0px;
@@ -100,18 +126,86 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 	margin-bottom: 0px;
 }
 
-.btn,.btn:active{
+.btn{
 	text-transform: uppercase;
 	color: #FFF;
 	background-color: #3BBBD1;
 }
 
-.btn:hover,.btn:focus {
+.btn:hover,.btn:focus,.btn:active {
 	color: #3BBBD1 ;
 	background-color: transparent;
 
 }
 
+section.row{	
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.logotipo{
+	display: table;
+	padding: 0px;
+}
+.logotipo img{
+	max-width: 100%;
+	margin: auto;
+}
+
+.logotipo p:first-of-type{
+	text-align: left;
+	margin-bottom: 0px;
+    display: table-row;
+}
+
+.download-p{
+	font-size: 12px;
+	margin-bottom: 15px;
+    display: table-row;
+}
+.logotipo-box{
+	padding: 30% 5%;
+    display: table-cell;
+    vertical-align: middle;
+	margin-bottom: 10px;
+}
+
+#logotipo1{
+	background-color: #FFF;
+}
+#logotipo3{
+	background-color: #3F6BB3;
+}
+
+#raleway-container{
+	font-family: Raleway;
+	padding-left: 0px;
+}
+
+#tipografias>p:first-of-type{
+	margin:0;
+}
+.tipografia-titulo{
+	font-size: 3em;
+	margin: 0;
+}
+.tipografia-exemplo{
+	font-size: 1.5em;
+	margin: 0px;
+}
+
+.raleway-light{font-weight: 300;}
+.raleway-regular{font-weight: 400;}
+.raleway-medium{font-weight: 500;}
+.raleway-semibold{font-weight: 600;}
+.raleway-bold{font-weight: 700;}
+.raleway-heavy{font-weight: 900;}
+
+.roboto-thin{font-weight: 100;}
+.roboto-light{font-weight: 300;}
+.roboto-regular{font-weight: 400;}
+.roboto-medium{font-weight: 500;}
+.roboto-bold{font-weight: 700;}
+.roboto-black{font-weight: 800;}
 footer{
 	text-align: center;
 	width: 100%;

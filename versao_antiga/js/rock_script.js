@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$(window).on('scroll', function () {
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 			$('.list-group-item.active').toggleClass('active');
-		  	$('a[href="#concluindo"]').parent('.list-group-item').toggleClass('active');
+		  	$('.list-group-princ li:last-child a').parent('.list-group-item').toggleClass('active');
 		}
 		else{
 			var cur_pos = $(this).scrollTop();
@@ -46,18 +46,27 @@ $(document).ready(function(){
 	});
 
 	var copyBtn = document.querySelector('#copiar-email');
-	copyBtn.addEventListener('click', function () {
-	  var urlField = document.querySelector('#email-exemplo');
-	   
-	  // create a Range object
-	  var range = document.createRange();  
-	  // set the Node to select the "range"
-	  range.selectNode(urlField);
-	  // add the Range to the set of window selections
-	  window.getSelection().addRange(range);
-	   
-	  // execute 'copy', can't 'cut' in this case
-	  document.execCommand('copy');
-	  window.getSelection().removeAllRanges();
-	}, false);
+	if(copyBtn){
+		copyBtn.addEventListener('click', function () {
+		  var urlField = document.querySelector('#email-exemplo');
+		   
+		  // create a Range object
+		  var range = document.createRange();  
+		  // set the Node to select the "range"
+		  range.selectNode(urlField);
+		  // add the Range to the set of window selections
+		  window.getSelection().addRange(range);
+		   
+		  // execute 'copy', can't 'cut' in this case
+		  document.execCommand('copy');
+		  window.getSelection().removeAllRanges();
+		}, false);
+	}
+
+	$(".dropdown-menu li a").click(function(){
+
+      $(".btn:first-child").text($(this).text().concat('  |  ▼'));
+      $(".btn:first-child").val($(this).text());
+
+   });
 });
