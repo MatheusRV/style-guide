@@ -253,6 +253,9 @@ footer{
 	height: 150px;
 }
 
+.content-footer{
+	margin-bottom: 0px;
+}
 /*.anchor{
    display:block;
    height:50px;
