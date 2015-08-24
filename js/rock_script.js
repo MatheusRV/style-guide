@@ -90,8 +90,8 @@ $(document).ready(function(){
       $(".btn:first-child").val($(this).text());
       color_op = $(".btn:first-child").val();
       if(color_op == "RGB"){
-      	$("#p-azul-rock").text("RGB: 73/103/169");
-      	$("#p-cinza-rock").text("RGB: 95/98/95");
+      	$("#p-azul-rock").text("RGB: 66/102/174");
+      	$("#p-cinza-rock").text("RGB: 100/96/95");
       	$("#p-verde-rock").text("RGB: 78/161/133");
       	$("#p-laranja-rock").text("RGB: 234/85/80");
       	$("#p-amarelo-rock").text("RGB: 241/196/15");
