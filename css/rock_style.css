@@ -222,12 +222,19 @@ section.row{
 .roboto-bold{font-weight: 700;}
 .roboto-black{font-weight: 800;}
 
+.cores>div{
+	padding: 0px;
+	margin-right: 10px;
+}
+.cor-p{
+	font-size: 14px;
+}
 .cor-box{
-	height: 80px;
+	height: 90px;
 }
 
 .cor_exemplo{
-	padding: 0 100% 63px 0;
+	padding: 0 100% 73px 0;
 }
 #azul-rock{
 	background: #4967A9;
