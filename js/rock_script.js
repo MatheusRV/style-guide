@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var color_op;
 	var nav = $('nav'),
 		nav_height = nav.outerHeight(),
 		sections = $('section');
@@ -63,10 +64,86 @@ $(document).ready(function(){
 		}, false);
 	}
 
-	$(".dropdown-menu li a").click(function(){
+	function copyTextToClipboard(text) {
+	  var textArea = document.createElement("textarea");
+	  textArea.style.position = 'fixed';
+	  textArea.style.top = 0;
+	  textArea.style.left = 0;
+	  textArea.style.width = '2em';
+	  textArea.style.height = '2em';
+	  textArea.style.padding = 0;
+	  textArea.style.border = 'none';
+	  textArea.style.outline = 'none';
+	  textArea.style.boxShadow = 'none';
+	  textArea.style.background = 'transparent';
+	  textArea.value = text;
+	  document.body.appendChild(textArea);
+	  textArea.select();
 
+	  document.execCommand('copy');
+	  document.body.removeChild(textArea);
+	}
+
+	$(".dropdown-menu li a").click(function(event){
+		event.preventDefault();
       $(".btn:first-child").text($(this).text().concat('  |  ▼'));
       $(".btn:first-child").val($(this).text());
-
+      color_op = $(".btn:first-child").val();
+      if(color_op == "RGB"){
+      	$("#p-azul-rock").text("R:73 G:103 B:169");
+      	$("#p-cinza-rock").text("R:95 G:98 B:95");
+      	$("#p-verde-rock").text("R:78 G:161 B:133");
+      	$("#p-laranja-rock").text("R:234 G:85 B:80");
+      	$("#p-amarelo-rock").text("R:241 G:196 B:15");
+      	$("#p-roxo-rock").text("R:134 G:59 B:86");
+      	$("#p-branco-rock").text("R:239 G:240 B:240");
+      }
+      else if(color_op == "CMYK"){
+      	$("#p-azul-rock").text("C:0.5680 M:0.3905 Y:0.0000 K:0.3373");
+      	$("#p-cinza-rock").text("C:0.0306 M:0.0000 Y:0.0306 K:0.6157");
+      	$("#p-verde-rock").text("C:0.5155 M:0.0000 Y:0.1739 K:0.3686");
+      	$("#p-laranja-rock").text("C:0.0000 M:0.6368 Y:0.6581 K:0.0824");
+      	$("#p-amarelo-rock").text("C:0.0000 M:0.1867 Y:0.9378 K:0.0549");
+      	$("#p-roxo-rock").text("C:0.0000 M:0.5597 Y:0.3582 K:0.4745");
+      	$("#p-branco-rock").text("C:0.0042 M:0.0000 Y:0.0000 K:0.0588");      	
+      }
+      else if(color_op == "HEXA (#)"){      	
+      	$("#p-azul-rock").text("#4967A9");
+      	$("#p-cinza-rock").text("#5F625F");
+      	$("#p-verde-rock").text("#4EA185");
+      	$("#p-laranja-rock").text("#EA5550");
+      	$("#p-amarelo-rock").text("#F1C40F");
+      	$("#p-roxo-rock").text("#863B56");
+      	$("#p-branco-rock").text("#EFF0F0");  
+      }
    });
+	$("#azul-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-azul-rock").text());
+	});
+	$("#cinza-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-cinza-rock").text());
+	});
+	$("#verde-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-verde-rock").text());
+	});
+	$("#laranja-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-laranja-rock").text());
+	});
+	$("#amarelo-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-amarelo-rock").text());
+	});
+	$("#roxo-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-roxo-rock").text());
+	});
+	$("#branco-rock").click(function(event) {
+		event.preventDefault();
+		copyTextToClipboard($("#p-branco-rock").text());
+	});
+
 });

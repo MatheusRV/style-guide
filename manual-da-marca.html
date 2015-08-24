@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/rock_style.css"/>
 </head>
 <body>
@@ -36,10 +36,16 @@
     <!-- Corpo -->
 	<div class="container">
 		<div class="col-xs-12 col-sm-3 col-sm-offset-1" id="sidebar">
-            <ul class="list-group">
+            <ul class="list-group list-group-princ">
                 <li class="list-group-item active"><a href="#introducao">Introdução</a></li>
-                <li class="list-group-item parent-list-group"><a href="#logotipo">Logotipo</a></li>
-                <li class="list-group-item parent-list-group"><a href="#tipografia">Tipografia</a></li>
+                <li class="list-group-item"><a href="#logotipo">Logotipo</a></li>
+                <li class="list-group-item"><a href="#tipografias">Tipografia</a></li>
+                <li class="list-group-item parent-list-group"><a href="#paleta-de-cores">Paleta de Cores</a>
+					<ul class="list-group sublist-group">
+                        <li class="list-group-item"><a href="#cores-institucionais">Cores Institucionais</a></li>
+                        <li class="list-group-item"><a href="#cores-complementares">Cores Complementares</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
 		<div id="content" class="col-xs-12 col-sm-8 col-sm-offset-4">
@@ -111,16 +117,70 @@
 				<p>
 					Nossa paleta cromática é dividida em cores institucionais e complementares.
 				</p>
+				 <p class="download-p">(Clique no retângulo para copiar)</p>
 				<div class="dropdown">
 					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Selecione o formato&nbsp&nbsp|&nbsp&nbsp▼
 					</button>
 					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						<li><a href="#">RGB</a></li>
-						<li><a href="#">CMYK</a></li>
-						<li><a href="#">HEXA (#)</a></li>
+						<li><a class="dropdown-op" href="#">RGB</a></li>
+						<li><a class="dropdown-op" href="#">CMYK</a></li>
+						<li><a class="dropdown-op" href="#">HEXA (#)</a></li>
 					</ul>
 				</div>
+				<section id="cores-institucionais">
+					<h3>Cores Institucionais</h3>
+					<div class="cores row">
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="azul-rock"></a>
+							</div>
+							<p id="p-azul-rock">#4967A9</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="cinza-rock"></a>
+							</div>
+							<p id="p-cinza-rock">#5F625F</p>
+						</div>
+					</div>
+				</section>
+				<section id="cores-complementares">
+					<h3>Cores Complementares</h3>
+					<div class="cores row">
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="verde-rock"></a>
+							</div>
+							<p id="p-verde-rock">#4EA185</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="laranja-rock"></a>
+							</div>
+							<p id="p-laranja-rock">#EA5550</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="amarelo-rock"></a>
+							</div>
+							<p id="p-amarelo-rock">#F1C40F</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="roxo-rock"></a>
+							</div>
+							<p id="p-roxo-rock">#863B56</p>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-2">
+							<div class="cor-box">
+								<a class="cor_exemplo" href="#" id="branco-rock"></a>
+							</div>
+							<p id="p-branco-rock">#EFF0F0</p>
+						</div>
+					</div>
+				<p class="download-p">Baixe a paleta complementar em <a href="https://color.adobe.com/Rock-Content-color-theme-6724586/edit/?copy=true" target="_blank">Adobe Color CC</a>.</p>
+				</section>
 			</section>
 
 		</div>
@@ -128,7 +188,7 @@
 
 	    <!-- Script -->    
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/rock_script.js"></script>
 </body>
 <footer>

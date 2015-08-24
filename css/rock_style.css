@@ -83,6 +83,13 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
 	background-color: transparent;
 }
+#sidebar{
+	padding-right: 0px;
+}
+#content{
+	float:right;
+	padding-left: 0px;
+}
 #content a{
 	color:#3BBBD1;
 }
@@ -206,6 +213,37 @@ section.row{
 .roboto-medium{font-weight: 500;}
 .roboto-bold{font-weight: 700;}
 .roboto-black{font-weight: 800;}
+
+.cor-box{
+	height: 80px;
+}
+
+.cor_exemplo{
+	padding: 0 100% 63px 0;
+}
+#azul-rock{
+	background: #4967A9;
+}
+#cinza-rock{
+	background: #5F625F;
+}
+#verde-rock{
+	background: #4EA185;
+}
+#laranja-rock{
+	background: #EA5550;
+}
+#amarelo-rock{
+	background: #F1C40F;
+}
+#roxo-rock{
+	background: #863B56;
+}
+#branco-rock{
+	background: #EFF0F0;
+}
+
+
 footer{
 	text-align: center;
 	width: 100%;
