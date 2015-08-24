@@ -90,22 +90,22 @@ $(document).ready(function(){
       $(".btn:first-child").val($(this).text());
       color_op = $(".btn:first-child").val();
       if(color_op == "RGB"){
-      	$("#p-azul-rock").text("RGB: 66/102/174");
-      	$("#p-cinza-rock").text("RGB: 100/96/95");
-      	$("#p-verde-rock").text("RGB: 78/161/133");
-      	$("#p-laranja-rock").text("RGB: 234/85/80");
-      	$("#p-amarelo-rock").text("RGB: 241/196/15");
-      	$("#p-roxo-rock").text("RGB: 134/59/86");
-      	$("#p-branco-rock").text("RGB: 239/240/240");
+      	$("#p-azul-rock").text("66/102/174");
+      	$("#p-cinza-rock").text("100/96/95");
+      	$("#p-verde-rock").text("78/161/133");
+      	$("#p-laranja-rock").text("234/85/80");
+      	$("#p-amarelo-rock").text("241/196/15");
+      	$("#p-roxo-rock").text("134/59/86");
+      	$("#p-branco-rock").text("239/240/240");
       }
       else if(color_op == "CMYK"){
-      	$("#p-azul-rock").text("CMYK 80/59/0/0");
-      	$("#p-cinza-rock").text("CMYK 62/54/53/26");
-      	$("#p-verde-rock").text("CMYK 70/15/56/1");
-      	$("#p-laranja-rock").text("CMYK 0/78/63/0");
-      	$("#p-amarelo-rock").text("CMYK 7/22/94/0");
-      	$("#p-roxo-rock").text("CMYK 36/81/37/32");
-      	$("#p-branco-rock").text("CMYK 8/5/6/0");      	
+      	$("#p-azul-rock").text("80/59/0/0");
+      	$("#p-cinza-rock").text("62/54/53/26");
+      	$("#p-verde-rock").text("70/15/56/1");
+      	$("#p-laranja-rock").text("0/78/63/0");
+      	$("#p-amarelo-rock").text("7/22/94/0");
+      	$("#p-roxo-rock").text("36/81/37/32");
+      	$("#p-branco-rock").text("8/5/6/0");      	
       }
       else if(color_op == "HEXA (#)"){      	
       	$("#p-azul-rock").text("#4967A9");
