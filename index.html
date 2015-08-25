@@ -5,6 +5,8 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/rock_style.css"/>
+    
+    <title>Guia de Estilo | Rock Content</title>
 </head>
 <body>
     
@@ -30,12 +32,16 @@
       </div>
     </nav>
     
-    <br /><br /><br /><br />
+    <div class="container">
+        <div class="jumbotron col-md-12">
+            
+        </div>
+    </div>
     
     <!-- Corpo -->
     <div class="container">
         <!-- Índice -->
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1" id="sidebar">
+        <div class="col-md-3" id="sidebar" style="background-color: transparent;">
             <ul class="list-group list-group-princ">
                 <li class="list-group-item active"><a href="#introducao">Introdução</a></li>
                 <li class="list-group-item parent-list-group"><a href="#tom-e-voz-Rock">Tom e voz: quem é a Rock Content?</a>
@@ -44,7 +50,7 @@
                         <li class="list-group-item"><a href="#tom-e-voz">Tom e voz</a></li>
                     </ul>
                 </li>
-                <li class="list-group-item parent-list-group"><a href="#conteudo">Escrevendo e produzindo conteúdo para a <br/> Rock Content</a>
+                <li class="list-group-item parent-list-group"><a href="#conteudo">Escrevendo e produzindo<br />conteúdo para a Rock Content</a>
                      <ul class="list-group sublist-group">
                         <li class="list-group-item"><a href="#redes-sociais">Redes Sociais</a></li>
                         <li class="list-group-item"><a href="#nosso-site">Nosso Site</a></li>
@@ -87,7 +93,7 @@
             </ul>
         </div>
         <!-- Conteudo -->
-        <div class="col-xs-12 col-sm-7 col-sm-offset-4" id="content">
+        <div class="col-md-8 col-md-offset-1" id="content" style="background-color: transparent;">
             <h1>Guia de Estilo</h1>
 
             <section id="introducao">
@@ -263,16 +269,16 @@
                 <section id="exemplo">
                     <h3>Exemplo</h3>
                     <p><b>Lançamento do ebook de SEO - Disparo para base segmentada de agências</b></p>
-                    <blockquote>
-                        <p><b>Resultados</b></p>
-                        <p>Disparado: 7.717</p>
-                        <p>Entregue: 7.666</p>
-                        <p>Taxa de abertura:31.9%</p>
-                        <p>Taxa de Clique: 7%</p>
-                        <p>Assunto: [EBOOK GRATUITO] Sua agência está na 1ª página do Google?</p>
-                    </blockquote>
+                    
+                    <p><b>Resultados</b><br/>
+                    Disparado: 7.717<br/>
+                    Entregue: 7.666<br/>
+                    Taxa de abertura:31.9%<br/>
+                    Taxa de Clique: 7%</p>
 
-                    <blockquote id="email-exemplo">
+                    <blockquote id="email-exemplo" class="teste">
+                        <p><b>Assunto: [EBOOK GRATUITO] Sua agência está na 1ª página do Google?</b></p>
+                        <hr/>
                         <p class="logo-exemplo"><img src="http://rockcontent.com/wp-content/uploads/2015/06/logo_rock-content-e1439240841224.png" alt="Rock Content" title="Rock Content"/></p>      
                         <p>Olá (NOME DO CONTATO),</p>
                         <p>Você sabe o que é SEO?</p>
@@ -284,8 +290,9 @@
                         <p> </p>
                         <p>Ps: foram estas técnicas que nós utilizamos na Rock Content para aumentar nosso tráfego orgânico em 615% em apenas 6 meses! </p>
                         <p>Um abraço, <br/> Vitor Peçanha</p>
+                        <hr/>
+                        <button class="btn" id="copiar-email">Copiar exemplo</button>
                     </blockquote>
-                    <button class="btn" id="copiar-email">Copiar exemplo</button>
                 </section>
                 
                 <section id="nossos-ebooks">
@@ -338,7 +345,6 @@
                             <p>Se não existe um conteúdo publicado sobre a dúvida do cliente, nós criamos um e enviamos para ele de volta!</p>
                         </li>
                     </ul>
-                    <br>
                 </section>  
             </section>
             <section id="blog">
@@ -557,19 +563,21 @@
         </div>
     </div>
     
-    <!-- Script -->    
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <footer>
+        <div class="container">
+            <p class="logo-footer">
+                <a href="http://rockcontent.com/" target="_blank"><img src="img/logo_branco.png" alt="Rock Content" title="Rock Content"/></a>
+            </p>
+            <p>
+                Made with ❤ in San Pedro Valley.<br/>
+                &copy; 2015 Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- Script -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/rock_script.js"></script>
 </body>
-<footer>
-  <div class="container">
-    <p class="logo-footer">
-        <a href="http://rockcontent.com/" target="_blank"><img src="http://rockcontent.com/wp-content/uploads/2015/06/logo_rock-content-e1439240841224.png" alt="Rock Content" title="Rock Content"/></a>
-    </p>
-    <p class="content-footer">Made in San Pedro Valley.<br>
-                            &copy; 2015 Todos os direitos reservados.
-    </p>
-  </div>
-</footer>
 </html>

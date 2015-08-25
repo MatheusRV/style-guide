@@ -1,28 +1,37 @@
 html,body{
-	background-color: #EFF0F0;
+	background-color: #f0f0f0;
 	font-family: Roboto;
 }
 
-blockquote{
+blockquote.teste{
 	background-color: #FFF;
 	border: 0px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 60px;
 }
 
 h1{
 	margin-top: 0px;
 }
-
+h2{
+	margin-top: 80px;
+}
+h3{
+	margin-top: 40px;
+}
 h1, h2, h3, h4{
 	margin-bottom: 25px;
 }
-
 p{
 	line-height: 1.7;
 	font-size: 16px;
+    margin: 25px 0;
+}
+li p{
+	margin: 0px;
 }
 li>p{
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 ul li:last-child p{
 	margin-bottom: 25px;
@@ -82,7 +91,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 .list-group-item{	
     border: 0px;
     border-radius: 0px !important;
-    margin: 0px;
+    margin: 10px 0;
 
     background-color: transparent; 
     font-weight: normal;
@@ -258,15 +267,17 @@ section.row{
 	background: #EFF0F0;
 }
 
-
 footer{
+    color: #fff;
 	text-align: center;
-	width: 100%;
-	background-color: #c9c9c9;
-	padding: 30px 0px;
+	background-color: #525252;
+	padding: 30px 0;
 	margin-top: 3%;
-	height: 150px;
 }
+footer p{
+    font-size: 14px !important;
+}
+    
 
 .content-footer{
 	margin-bottom: 0px;
@@ -283,4 +294,12 @@ footer{
 	#sidebar{
 		position: fixed;
 	}
+}
+
+.jumbotron{
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 0 !important;
+    margin: 100px 0 50px 0;
+    padding: 150px 0;
 }
