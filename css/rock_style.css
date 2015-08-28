@@ -48,7 +48,7 @@ section:first-child{
 	margin-top: 0px;
 }
 .img-responsive { 
-    width:100%;
+    max-width:100%;
 }
 .btn,.dropdown{
 	border-radius: 0px;
