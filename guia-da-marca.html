@@ -39,21 +39,7 @@
     <!-- Corpo -->
 	<div class="container">
         <div class=>
-            <div id="sidebar">
-                <ul class="list-group list-group-princ">
-                    <li class="list-group-item active"><a href="#introducao">Introdução</a></li>
-                    <li class="list-group-item"><a href="#logotipo">Logotipo</a></li>
-                    <li class="list-group-item"><a href="#icone">Icone</a></li>
-                    <li class="list-group-item"><a href="#tipografias">Tipografia</a></li>
-                    <li class="list-group-item parent-list-group"><a href="#paleta-de-cores">Paleta de Cores</a>
-                        <ul class="list-group sublist-group">
-                            <li class="list-group-item"><a href="#cores-institucionais">Cores Institucionais</a></li>
-                            <li class="list-group-item"><a href="#cores-complementares">Cores Complementares</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id="content">
+            <div id="content" class="col-md-8">
                 <section id="introducao">
                     <p>Seja bem-vindo ao nosso guia de identidade visual! Definimos algumas diretrizes básicas para o bom uso da marca e seus recursos gráficos. Use-a bem e ajude a tornar o símbolo da empresa uma referência no nosso mercado.
                     Baixe o arquivo completo em <a href="#">.zip</a>.</p>
@@ -139,9 +125,9 @@
                         <!--<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Selecione o formato&nbsp&nbsp|&nbsp&nbsp▼
                         </button>-->
-                        <a class="btn dropdown-op" href="#">RGB</a>
-                        <a class="btn btn dropdown-op" href="#">CMYK</a>
-                        <a class="btn dropdown-op" href="#">HEXA (#)</a>
+                        <button class="btn btn-tipo-valor">RGB</button>
+                        <button class="btn btn-tipo-valor">CMYK</button>
+                        <button class="btn btn-tipo-valor">HEXA (#)</button>
                     </div>
 
                     <section id="cores-institucionais">
@@ -202,6 +188,20 @@
                     </section>
                 </section>
 
+            </div>
+            <div id="sidebar" class="col-md-3 col-md-offset-8">
+                <ul class="list-group list-group-princ">
+                    <li class="list-group-item active"><a href="#introducao">Introdução</a></li>
+                    <li class="list-group-item"><a href="#logotipo">Logotipo</a></li>
+                    <li class="list-group-item"><a href="#icone">Icone</a></li>
+                    <li class="list-group-item"><a href="#tipografias">Tipografia</a></li>
+                    <li class="list-group-item parent-list-group"><a href="#paleta-de-cores">Paleta de Cores</a>
+                        <ul class="list-group sublist-group">
+                            <li class="list-group-item"><a href="#cores-institucionais">Cores Institucionais</a></li>
+                            <li class="list-group-item"><a href="#cores-complementares">Cores Complementares</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
 	</div>

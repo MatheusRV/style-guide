@@ -112,7 +112,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 }
 #sidebar{
 	padding-right: 0px;
-    text-align: right;
+    text-align: left;
 }
 #content{
 	padding-left: 0px;
@@ -316,33 +316,14 @@ footer p{
 }
 
 /* Responsivo */
-@media (max-width: 767px){
+@media (max-width: 991px){
 	#sidebar{
-		width: 100%;
-	}
-	#content{
-		margin-left: 0;
-		width: 100%;
+		display: none;
 	}
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
 	#sidebar{
+		display: block;
 		position: fixed;
-		width: 20%;
-	}
-	#content{
-		margin-left: 30%;
-		width: 70%;
-	}
-}
-@media (min-width: 1600px){
-	#sidebar{
-		position: fixed;
-		margin-left: -8%;
-		width: 20%;
-	}
-	#content{
-		margin-left: 30%;
-		width: 70%;
 	}
 }

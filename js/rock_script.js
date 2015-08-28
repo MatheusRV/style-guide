@@ -109,11 +109,10 @@ $(document).ready(function(){
 	  document.body.removeChild(textArea);
 	}
 
-	$(".dropdown-menu li a").click(function(event){
+	$(".btn-tipo-valor").click(function(event){
 		event.preventDefault();
-      $(".btn:first-child").text($(this).text().concat('  |  ▼'));
-      $(".btn:first-child").val($(this).text());
-      color_op = $(".btn:first-child").val();
+
+      color_op = $(this).text();
       if(color_op == "RGB"){
       	$("#p-azul-rock").text("66/102/174");
       	$("#p-cinza-rock").text("100/96/95");
