@@ -3,7 +3,8 @@ html,body{
     color: #757575;
 	font-family: Roboto;
 }
-
+.container{
+}
 blockquote.teste{
 	background-color: #FFF;
 	border: 0px;
@@ -315,8 +316,33 @@ footer p{
 }
 
 /* Responsivo */
+@media (max-width: 767px){
+	#sidebar{
+		width: 100%;
+	}
+	#content{
+		margin-left: 0;
+		width: 100%;
+	}
+}
 @media (min-width: 768px){
 	#sidebar{
 		position: fixed;
+		width: 20%;
+	}
+	#content{
+		margin-left: 30%;
+		width: 70%;
+	}
+}
+@media (min-width: 1600px){
+	#sidebar{
+		position: fixed;
+		margin-left: -8%;
+		width: 20%;
+	}
+	#content{
+		margin-left: 30%;
+		width: 70%;
 	}
 }
