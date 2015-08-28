@@ -111,7 +111,6 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
     text-align: right;
 }
 #content{
-	float:right;
 	padding-left: 0px;
 }
 #content a{
@@ -297,7 +296,7 @@ footer p{
    visibility:hidden;
 }*/
 
-.jumbotron{
+#jumbotron{
     background: url(../img/header.jpg);
     border-bottom: 1px solid #d4d4d4;
     border-radius: 0 !important;

@@ -20,8 +20,15 @@ $(document).ready(function(){
 		});
 		return false;
     });
-	 
+
 	$(window).on('scroll', function () {
+
+		if ($(window).scrollTop() < $('#jumbotron').offset().top + $('#jumbotron').outerHeight(true) - 55) {
+			$('#sidebar').css('top',($('#jumbotron').offset().top + $('#jumbotron').outerHeight(true) - $(window).scrollTop()));
+			
+		} else {
+		    $('#sidebar').css('top',55);
+		}
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
 			$('.list-group-item.active').toggleClass('active');
 		  	$('.list-group-princ li:last-child a').parent('.list-group-item').toggleClass('active');
