@@ -47,8 +47,9 @@ $(document).ready(function(){
 			$('#sidebar').css('top',0);
 		}
 		if($(window).scrollTop() + $(window).height() == $(document).height()) {
-			$('.list-group-item.active').toggleClass('active');
+			$('.list-group-item.active').removeClass('active');
 		  	$('.list-group-princ li:last-child a').parent('.list-group-item').toggleClass('active');
+			$('.parent-list-group:not(.active)').find('.sublist-group').css("display", "none");
 		}
 		else{
 			var cur_pos = $(this).scrollTop();
