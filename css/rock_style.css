@@ -324,7 +324,7 @@ footer p{
 }
 @media (min-width: 992px){
 	#sidebar{
-		display: block;
+		display: inline-block;
 		position: fixed;
 	}
 }
