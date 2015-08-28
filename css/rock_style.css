@@ -3,7 +3,9 @@ html,body{
     color: #757575;
 	font-family: Roboto;
 }
-
+.container{
+	max-width: 1170px;
+}
 blockquote.teste{
 	background-color: #FFF;
 	border: 0px;
