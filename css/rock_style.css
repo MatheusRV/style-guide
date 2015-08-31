@@ -74,7 +74,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse{
 
 .navbar-inverse .navbar-nav>li>a{
 	border-bottom: 3.5px solid #222;
-	font-weight: 100;
+	font-weight: 500;
 	font-size: 13px;
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,
@@ -107,7 +107,7 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 
     background-color: transparent;
     padding: 0px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
 	background-color: transparent;
