@@ -8,7 +8,19 @@
     
     <title>Guia de Estilo | Rock Content</title>
 </head>
-<body>
+<body>    
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=248294708555560";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     
     <!-- Menu -->
     <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -33,16 +45,16 @@
     </nav>
     
     <div id="jumbotron">
-        <div class="col-sm-8 col-sm-offset-4"><h1>Manual de identidade <br/>| Guia de Estilo</h1></div>
+        <div class="container"><h1><span>Manual de identidade</span><br/>Guia de Estilo</h1></div>
     </div>
     
     <!-- Corpo -->
     <div class="container">
-        <div>
+        <div class="row">
             <!-- Conteudo -->
-            <div id="content" class="col-md-8">
-
+            <div id="content" class="col-md-9">
                 <section id="introducao">
+                    <h2>Introdução</h2>
                     <p>Há algum tempo sentimos uma grande necessidade de definir a identidade editorial da Rock Content. Então, inspirados no incrível <a href="http://mailchimp.com/about/style-guide/" target="_blank">guia de estilo da MailChimp</a>, decidimos criar o nosso próprio guia de estilo! Mostrar nossa cara e as coisas que valorizamos, para exibi-las em cada pedacinho de conteúdo que publicamos.</p>
                     <p>Estudamos dezenas de referências antes de criar nosso guia de estilo — inclusive, se você quer criar um para sua empresa ou busca referências para um cliente, sugerimos que também dê uma olhada no guia do <a href="https://buffer.com/tone-guide">Buffer</a>. Se quiser aprender mais sobre o assunto vale também dar uma lida <a href="http://blog.hubspot.com/blog/tabid/6307/bid/31247/The-Simple-Template-for-a-Thorough-Content-Style-Guide.aspx">neste artigo</a>.</p>
                     <p>Este guia de estilo é seu novo melhor amigo para entender como nos comportamos em cada canal — não olhe para ele como um conjunto de regras sólidas que nunca devem ser quebradas, mas sim como algo que pode te ajudar a desvendar essa figura chamada Rock Content!</p>
@@ -81,8 +93,8 @@
                             </li>
                         </ul>
                         <p>Há uma grande diferença entre voz e tom (novamente citando o Mailchimp):</p>
-                        <p>Pense da seguinte maneira: você tem sempre a mesma voz, mas seu tom é algo que está sempre mudando, dependendo do contexto e da pessoa com a qual você está falando.</p>
-                        <p>Então, sempre se lembre disso ao escrever algo para a Rock Content: o contexto, a pessoa e seus sentimentos e a situação devem sempre ser considerados e tidos como guia para o tom de voz que você vai usar, independente do conteúdo que você está produzindo.</p>
+                        <p><i>Pense da seguinte maneira: você tem sempre a mesma voz, mas seu tom é algo que está sempre mudando, dependendo do contexto e da pessoa com a qual você está falando.</i></p>
+                        <p>Então, sempre se lembre disso ao escrever algo para a Rock Content: o contexto, a pessoa e seus sentimentos e a situação devem <b>sempre</b> ser considerados e tidos como guia para o tom de voz que você vai usar, independente do conteúdo que você está produzindo.</p>
                     </section>
                 </section>
                 <section id="conteudo">
@@ -103,6 +115,16 @@
                     <section id="redes-sociais">
                         <h3>Redes sociais</h3>
                         <p>Temos contas em quase todas as redes sociais, mas somos mais ativos no <a href="http://www.facebook.com/werockcontent">Facebook</a>, no <a href="https://www.linkedin.com/company/rock-content">LinkedIn</a> e no <a href="https://twitter.com/rockcontent">Twitter</a>.</p>
+                        <div class="col-md-6">
+                            <p>
+                                <div class="fb-page" data-href="https://www.facebook.com/werockcontent" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/werockcontent"><a href="https://www.facebook.com/werockcontent">Rock Content</a></blockquote></div></div>
+                            </p>
+                            <p><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/CompanyProfile" data-id="3012137" data-format="inline"></script></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><a class="twitter-timeline" href="https://twitter.com/rockcontent" data-widget-id="639144094145622016">Tweets by @rockcontent</a></p>
+                        </div>                            
+                            
                         <p>Procuramos ao máximo manter nossa objetividade nas redes sociais — preferimos ser breves e trazer o leitor para mais perto (nosso site).</p>
                         <ul>
                             <li>
@@ -124,12 +146,13 @@
                     <section id="nosso-site">
                         <h3>Nosso site</h3>
                         <p>Nosso site (se ele ainda não segue este guia, possivelmente o projeto está um pouco atrasado) fala com a nossa voz e conta nossa história. Sempre que possível, deixamos nossos clientes contarem os motivos de trabalharem conosco. Quando não são os clientes, são nossos números, nossas pesquisas e materiais educativos que saltam à vista do nosso visitante.</p>
+                        <p><a href="http://rockcontent.com" target="_blank"><img src="img/bg.png" title="Site Rock Content" class="img-responsive" /></a></p>
                     </section>
 
                     <section id="videos">
                         <h3>Vídeos</h3>
-                        <p>Nossa equipe sempre que possível mostra a cara em nosso canal do YouTube, não é mesmo, <a href="https://twitter.com/pecanha">@pecanha</a>? &nbsp;&nbsp;</p>
-                        <p>A linguagem nesse canal também segue exatamente tudo aquilo que pregamos: educar o mercado de maneira simples e objetiva, sem enrolação e com muita vontade de ensinar. Nossos vídeos são uma conversa franca com nosso público. Didática, direta e prática. &nbsp;</p>
+                        <p>Nossa equipe sempre que possível mostra a cara em nosso canal do YouTube, não é mesmo, <a href="https://twitter.com/pecanha">@pecanha</a>?</p>
+                        <p>A linguagem nesse canal também segue exatamente tudo aquilo que pregamos: educar o mercado de maneira simples e objetiva, sem enrolação e com muita vontade de ensinar. Nossos vídeos são uma conversa franca com nosso público. Didática, direta e prática.</p>
                     </section>
 
                     <section id="cases">
@@ -143,7 +166,7 @@
                                 <p>Como conseguimos superar este desafio e obter resultados positivos em conjunto.</p>
                             </li>
                         </ul>
-                        <p>A linguagem dos nossos cases é objetiva. Por meio de tópicos mostramos os problemas, soluções e resultados que encontramos para cada caso. Não queremos textos enormes e cheios de elogios ao nosso trabalho — isso vai contra o que acreditamos. Mostramos de maneira simples como nossos esforços foram essenciais para o sucesso de nossos clientes. Mostramos mais números que opiniões. CTA: VEja nossos cases aqui</p>
+                        <p>A linguagem dos nossos cases é objetiva. Por meio de tópicos mostramos os problemas, soluções e resultados que encontramos para cada caso. Não queremos textos enormes e cheios de elogios ao nosso trabalho — isso vai contra o que acreditamos. Mostramos de maneira simples como nossos esforços foram essenciais para o sucesso de nossos clientes. Mostramos mais números que opiniões.</p>
                     </section>
 
                     <section id="emails">
@@ -232,7 +255,7 @@
                             <p> </p>
                             <p><a href="http://materiais.rockcontent.com/guia-seo-rockcontent">Baixe agora o Guia definitivo de SEO da Rock Content, aprenda o que é SEO e como obter mais oportunidades de negócio!</a></p>
                             <p> </p>
-                            <p>Ps: foram estas técnicas que nós utilizamos na Rock Content para aumentar nosso tráfego orgânico em 615% em apenas 6 meses! </p>
+                            <p>Ps: foram estas técnicas que nós utilizamos na Rock Content para aumentar nosso tráfego orgânico em <b>615% em apenas 6 meses!</b></p>
                             <p>Um abraço, <br/> Vitor Peçanha</p>
                             <hr/>
                             <button class="btn" id="copiar-email">Copiar exemplo</button>
@@ -261,9 +284,19 @@
 
                     <section id="landing-pages">
                         <h3>Landing pages</h3>
-                        <p>Fazemos uma landing page para cada oferta que produzimos. Lançamos um novo ebook? Ele terá sua própria landing page e viverá nela. Elas são feitas com o objetivo de tornar nossas ofertas ainda mais atraentes e converter (e reconverter) nossos visitantes em leads. </p>
-                        <p>Sua linguagem é um pouco mais certeira: explicamos em poucos tópicos o que o leitor encontrará naquele conteúdo e como ele vai se beneficiar dele.</p>
-                        <p>Aqui, as palavras-chave são objetividade e conversão. &nbsp;</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fazemos uma landing page para cada oferta que produzimos. Lançamos um novo ebook? Ele terá sua própria landing page e viverá nela. Elas são feitas com o objetivo de tornar nossas ofertas ainda mais atraentes e converter (e reconverter) nossos visitantes em leads.</p>
+                                <p>Sua linguagem é um pouco mais certeira: explicamos em poucos tópicos o que o leitor encontrará naquele conteúdo e como ele vai se beneficiar dele.</p>
+                                <p>Aqui, as palavras-chave são objetividade e conversão.</p>
+                            </div>
+                            <div class="col-md-8">
+                                <blockquote class="teste">
+                                    <img src="img/lp.png" title="Landing Page Rock Content" class="img-responsive" />
+                                </blockquote>
+                            </div>
+                        </div>
+                        
                         <h3>Conversando com os clientes</h3>
                         <p>Nós adoramos conversar com nossos clientes. Nossa linguagem segue o mesmo padrão deste documento, porém: </p>
                         <ul>
@@ -294,6 +327,7 @@
                 <section id="blog">
                     <h2>Nosso blog: escrevendo para o Marketing de Conteúdo</h2>
                     <p>Nosso blog é nosso maior xodó. Nós vivemos com o olho pregado no Analytics dele e estamos sempre interagindo com nossos leitores por lá. Seu principal objetivo é ser referência quando alguém quer aprender sobre Marketing Digital e Marketing de Conteúdo.</p>
+                    <p><a href="http://marketingdeconteudo.com/" target="_blank"><img src="img/blog.png" title="Blog MarketingDeConteudo.com" class="img-responsive" /></a></p>
                     <p>A linguagem do nosso blog é informal e procuramos explicar os assuntos da maneira mais direta possível em nossos conteúdos. Já imaginou um post sobre SEO para iniciantes cheio de complicações e uma linguagem extremamente técnica? Nós também não!</p>
                     <p>Nossos posts são planejados sempre levando em conta: </p>
                     <ul>
@@ -507,7 +541,7 @@
             </div>
 
             <!-- Índice -->
-            <div id="sidebar"  class="col-md-3 col-md-offset-1">
+            <div id="sidebar" class="col-md-3">
                 <ul class="list-group list-group-princ">
                     <li class="list-group-item active"><a href="#introducao">Introdução</a></li>
                     <li class="list-group-item parent-list-group"><a href="#tom-e-voz-Rock">Tom e voz: quem é a Rock Content?</a>
