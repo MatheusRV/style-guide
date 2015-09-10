@@ -45,14 +45,14 @@
                 <section id="introducao">
                     <h2>Introdução</h2>
                     <p>Seja bem-vindo ao nosso guia da marca! Definimos algumas diretrizes básicas para o bom uso da nossa identidade visual e seus recursos gráficos.
-                    Faça download dos arquivos individualmente ou do pacote completo em <a href="<?php echo get_template_directory_uri();?>/marca/downloads/Manual da marca.zip">.zip</a>.</p>
+                    Faça download dos arquivos individualmente ou do pacote completo em <a href="<?php echo get_template_directory_uri();?>/marca/downloads/Guia da marca.zip">.zip</a>.</p>
                 </section>
 
                 <section id="logotipo">
                     <h2>Logotipo</h2>
                     <p>As aplicações adequadas do logotipo da Rock Content refletem o cuidado que dedicamos aos nossos clientes.</p>
                     <p class="padding50"><img src="<?php echo get_template_directory_uri();?>/marca/img/logo_colorido.png" alt="Logo Rock Content" class="img-responsive" id="logo_rock" title="Logo da Rock Content" /></p>
-                    <p>Aprenda a utilizá-las em diferentes situações:</p>
+                    <p>Utilizá-lo em diferentes situações:</p>
                     <div class="logotipo-container">
                         <div class="col-xs-12 col-md-4 logotipo">
                             <p><img class="img-responsive logotipo1" alt="Logo colorido" src="<?php echo get_template_directory_uri();?>/marca/img/logo_colorido.png" id="logo_colorido"></p>
@@ -81,24 +81,25 @@
                         <div class="col-xs-12 col-md-4 logotipo">
                             <p><img class="img-responsive logotipo1" alt="Logo colorido" src="<?php echo get_template_directory_uri();?>/marca/img/icone_colorido.png" id="logo_colorido"></p>
                             <p>Logo em aplicação normal
-                            <!-- <span class="download-p">Download em <a href="#">.eps</a> ou <a href="#" target="_blank">.png</a>.</span></p> -->
+                            <span class="download-p">Download em <a href="<?php echo get_template_directory_uri();?>/marca/downloads/Ícone-Rock-Content.eps">.eps</a> ou <a href="<?php echo get_template_directory_uri();?>/marca/img/icone_colorido.png" target="_blank">.png</a>.</span></p>
                         </div> 
                         <div class="col-xs-12 col-md-4 logotipo">
                             <p><img class="img-responsive logotipo2" alt="Logo escala cinza" src="<?php echo get_template_directory_uri();?>/marca/img/icone_escala_cinza.png" id="logo_escala_cinza"></p>
                             <p>Logo em escala de cinza
-                            <!-- <span class="download-p">Download em <a href="#">.eps</a> ou <a href="#" target="_blank">.png</a>.</span></p> -->
+                            <span class="download-p">Download em <a href="<?php echo get_template_directory_uri();?>/marca/downloads/Ícone-Rock-Content.eps">.eps</a> ou <a href="<?php echo get_template_directory_uri();?>/marca/img/icone_escala_cinza.png" target="_blank">.png</a>.</span></p>
                         </div>
                         <div class="col-xs-12 col-md-4 logotipo">
                             <p><img class="img-responsive logotipo3" alt="Logo branco" src="<?php echo get_template_directory_uri();?>/marca/img/icone_branco.png" id="logo_colorido" /></p>
                             <p>Logo branco em fundo preto
-                            <!-- <span class="download-p">Download em <a href="#">.eps</a> ou <a href="#" target="_blank">.png</a>.</span></p>    -->
+                            <span class="download-p">Download em <a href="<?php echo get_template_directory_uri();?>/marca/downloads/Ícone-Rock-Content.eps">.eps</a> ou <a href="<?php echo get_template_directory_uri();?>/marca/img/icone_branco.png" target="_blank">.png</a>.</span></p>   
                         </div>
                     </div>  
                 </section>
 
                 <section id="tipografias">
                     <h2>Tipografias</h2>
-                    <p>Nossa marca pertence à família tipográfica <b>Soho</b>. Contudo, utilizamos como fonte principal para o meio digital a <a href="https://www.google.com/fonts#UsePlace:use/Collection:Roboto" target="_blank">Roboto</a>, a qual proporciona uma boa leitura tanto nas plataformas Mobile, quanto nos Desktop. Como apoio, a família <a href="https://www.google.com/fonts#UsePlace:use/Collection:Raleway" target="_blank">Raleway</a> traz descontração nas Redes Sociais.</p>
+                    <p>Utilizamos como fonte principal para o meio digital a <a href="https://www.google.com/fonts#UsePlace:use/Collection:Roboto" target="_blank">Roboto</a>, a qual proporciona uma boa leitura tanto nas plataformas Mobile, quanto nos Desktop. Como apoio, a família <a href="https://www.google.com/fonts#UsePlace:use/Collection:Raleway" target="_blank">Raleway</a> traz descontração nas Redes Sociais.</p>
+                </br>
                     <div class="row">
                         <div class="col-md-4" id="roboto-container">
                             <p class="tipografia-titulo">Roboto</p>
