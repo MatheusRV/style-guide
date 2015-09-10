@@ -164,6 +164,10 @@ nav.navbar.navbar-fixed-top.navbar-inverse>.container{
 #email-exemplo p:last-of-type{
 	margin-bottom: 0px;
 }
+#logo_rock{
+	max-width: 600px;
+	margin: auto;
+}
 
 .btn{
 	text-transform: uppercase;
