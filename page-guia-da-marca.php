@@ -33,6 +33,19 @@
         </div>
       </div>
     </nav>
+
+     <div class="share guia-da-marca">
+        <a target="_blank" href="https://twitter.com/home?status=http%3A//marketingparatecnologia.com/" class="btnTw btnShare" title="Twitter"><span class="twCount">0</span></a>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//marketingparatecnologia.com/" class="btnFb btnShare" title="Facebook"><span class="fbCount">0</span></a>
+        <a target="_blank" href="https://plus.google.com/share?url=http%3A//marketingparatecnologia.com/" class="btnGp btnShare" title="Google+"><span class="gpCount">0</span></a>
+        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//marketingparatecnologia.com/&title=Mar.Tech&summary=&source=" class="btnLi btnShare" title="LinkedIn"><span class="liCount">0</span></a>
+    </div>
+    <ul class="share-mobile guia-da-marca">
+        <li><a target="_blank" href="https://twitter.com/home?status=http%3A//marketingparatecnologia.com/" class="btnTw-mobile btnShare" title="Twitter"><span class="twCount">0</span></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//marketingparatecnologia.com/" class="btnFb-mobile btnShare" title="Facebook"><span class="fbCount">0</span></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http%3A//marketingparatecnologia.com/" class="btnGp-mobile btnShare" title="Google+"><span class="gpCount">0</span></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//marketingparatecnologia.com/&title=Mar.Tech&summary=&source=" class="btnLi-mobile btnShare" title="LinkedIn"><span class="liCount">0</span></a></li>
+    </ul>
     
     <div id="jumbotron">
         <div class="container"><h1><span>Manual de identidade</span><br/>Guia da Marca</h1></div>
@@ -224,6 +237,16 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/marca/js/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/marca/js/rock_script.js"></script>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P8JT9L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P8JT9L');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Start of Async HubSpot Analytics Code -->
     <script type="text/javascript">
         (function(d,s,i,r) {
@@ -234,7 +257,16 @@
         })(document,"script","hs-analytics",300000);
     </script>
     <!-- End of Async HubSpot Analytics Code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i[’GoogleAnalyticsObject’]=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,’script’,’//www.google-analytics.com/analytics.js’,’ga’);
 
+      ga(‘create’, ‘UA-21297055-24’, ‘auto’);
+      ga(‘send’, ‘pageview’);
+
+    </script>
     <!-- Código do Google para tag de remarketing --> <!-- As tags de remarketing não podem ser associadas a informações pessoais de identificação nem inseridas em páginas relacionadas a categorias de confidencialidade. Veja mais informações e instruções sobre como configurar a tag em: http://google.com/ads/remarketingsetup -> 
     <script type="text/javascript"> 
     /* <![CDATA[ */ var google_conversion_id = 955667730; var google_custom_params = window.google_tag_params; var google_remarketing_only = true; /* ]]> */ 

@@ -169,5 +169,144 @@ $(document).ready(function(){
 		event.preventDefault();
 		copyTextToClipboard($("#p-branco-rock").text());
 	});
+	if($('.guia-da-marca')){
+		(function () {
+		    var countUp, setCount, url;
+		    url = 'http://rockcontent.com/guia-da-marca/';
+		    $.getJSON('http://urls.api.twitter.com/1/urls/count.json?url=' + url + '&callback=?', function (json) {
+		        return setCount($('.twCount'), json.count);
+		    });
+		    $.getJSON('http://graph.facebook.com/' + url, function (json) {
+		    	console.log($('.fbCount'), json.shares);
+		        return setCount($('.fbCount'), json.shares);
+		    });
+		    // $.getJSON('http://api.pinterest.com/v1/urls/count.json?url=' + url + '&callback=?', function (json) {
+		    //     return setCount($('.prCount'), json.count);
+		    // });
+		    $.getJSON('http://www.linkedin.com/countserv/count/share?url=' + url + '&callback=?', function (json) {
+		        return setCount($('.liCount'), json.count);
+		    });
+		    // $.getJSON('http://feeds.delicious.com/v2/json/urlinfo/data?url=' + url + '&callback=?', function (json) {
+		    //     return setCount($('.dlCount'), json[0].total_posts);
+		    // });
 
+		    var request = [{
+			    "method":"pos.plusones.get",
+			    "id":"p",
+			    "params":{
+			        "nolog":true,
+			        "id":url,
+			        "source":"widget",
+			        "userId":"@viewer",
+			        "groupId":"@self"
+			        },
+			    "jsonrpc":"2.0",
+			    "key":"p",
+			    "apiVersion":"v1"
+			}];
+
+			$.ajax({
+			    url: "https://clients6.google.com/rpc?key=AIzaSyCKSbrvQasunBoV16zDH9R33D88CeLr9gQ",
+			    type: "POST",
+			    data: JSON.stringify(request),
+			    contentType: "application/json; charset=utf-8",
+			    dataType: "json",
+			    success: function(response) {
+			    	return setCount($('.gpCount'), response[0].result.metadata.globalCounts.count);
+			    }
+			});
+
+		    countUp = function ($item) {
+		        return setTimeout(function () {
+		            var current, newCount, target;
+		            current = $item.attr('data-current-count') * 1;
+		            target = $item.attr('data-target-count') * 1;
+		            newCount = current + Math.ceil((target - current) / 2);
+		            $item.attr('data-current-count', newCount);
+		            $item.html(newCount);
+		            if (newCount < target) {
+		                return countUp($item);
+		            }
+		        }, 100);
+		    };
+		    setCount = function ($item, count) {
+		        if (count == null) {
+		            count = 0;
+		        }
+		        $item.attr('data-target-count', count);
+		        $item.attr('data-current-count', 0);
+		        return countUp($item);
+		    };
+		}.call(this));
+	}
+	if($('.guia-de-estilo')){
+		(function () {
+		    var countUp, setCount, url;
+		    url = 'http://rockcontent.com/guia-de-estilo/';
+		    $.getJSON('http://urls.api.twitter.com/1/urls/count.json?url=' + url + '&callback=?', function (json) {
+		        return setCount($('.twCount'), json.count);
+		    });
+		    $.getJSON('http://graph.facebook.com/' + url, function (json) {
+		    	console.log($('.fbCount'), json.shares);
+		        return setCount($('.fbCount'), json.shares);
+		    });
+		    // $.getJSON('http://api.pinterest.com/v1/urls/count.json?url=' + url + '&callback=?', function (json) {
+		    //     return setCount($('.prCount'), json.count);
+		    // });
+		    $.getJSON('http://www.linkedin.com/countserv/count/share?url=' + url + '&callback=?', function (json) {
+		        return setCount($('.liCount'), json.count);
+		    });
+		    // $.getJSON('http://feeds.delicious.com/v2/json/urlinfo/data?url=' + url + '&callback=?', function (json) {
+		    //     return setCount($('.dlCount'), json[0].total_posts);
+		    // });
+
+		    var request = [{
+			    "method":"pos.plusones.get",
+			    "id":"p",
+			    "params":{
+			        "nolog":true,
+			        "id":url,
+			        "source":"widget",
+			        "userId":"@viewer",
+			        "groupId":"@self"
+			        },
+			    "jsonrpc":"2.0",
+			    "key":"p",
+			    "apiVersion":"v1"
+			}];
+
+			$.ajax({
+			    url: "https://clients6.google.com/rpc?key=AIzaSyCKSbrvQasunBoV16zDH9R33D88CeLr9gQ",
+			    type: "POST",
+			    data: JSON.stringify(request),
+			    contentType: "application/json; charset=utf-8",
+			    dataType: "json",
+			    success: function(response) {
+			    	return setCount($('.gpCount'), response[0].result.metadata.globalCounts.count);
+			    }
+			});
+
+		    countUp = function ($item) {
+		        return setTimeout(function () {
+		            var current, newCount, target;
+		            current = $item.attr('data-current-count') * 1;
+		            target = $item.attr('data-target-count') * 1;
+		            newCount = current + Math.ceil((target - current) / 2);
+		            $item.attr('data-current-count', newCount);
+		            $item.html(newCount);
+		            if (newCount < target) {
+		                return countUp($item);
+		            }
+		        }, 100);
+		    };
+		    setCount = function ($item, count) {
+		        if (count == null) {
+		            count = 0;
+		        }
+		        $item.attr('data-target-count', count);
+		        $item.attr('data-current-count', 0);
+		        return countUp($item);
+		    };
+		}.call(this));
+	}
 });
