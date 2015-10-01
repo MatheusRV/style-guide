@@ -177,7 +177,6 @@ $(document).ready(function(){
 		        return setCount($('.twCount'), json.count);
 		    });
 		    $.getJSON('http://graph.facebook.com/' + url, function (json) {
-		    	console.log($('.fbCount'), json.shares);
 		        return setCount($('.fbCount'), json.shares);
 		    });
 		    // $.getJSON('http://api.pinterest.com/v1/urls/count.json?url=' + url + '&callback=?', function (json) {
@@ -247,7 +246,6 @@ $(document).ready(function(){
 		        return setCount($('.twCount'), json.count);
 		    });
 		    $.getJSON('http://graph.facebook.com/' + url, function (json) {
-		    	console.log($('.fbCount'), json.shares);
 		        return setCount($('.fbCount'), json.shares);
 		    });
 		    // $.getJSON('http://api.pinterest.com/v1/urls/count.json?url=' + url + '&callback=?', function (json) {

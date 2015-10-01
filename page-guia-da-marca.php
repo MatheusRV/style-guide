@@ -35,16 +35,16 @@
     </nav>
 
      <div class="share guia-da-marca">
-        <a target="_blank" href="https://twitter.com/home?status=http%3A//marketingparatecnologia.com/" class="btnTw btnShare" title="Twitter"><span class="twCount">0</span></a>
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//marketingparatecnologia.com/" class="btnFb btnShare" title="Facebook"><span class="fbCount">0</span></a>
-        <a target="_blank" href="https://plus.google.com/share?url=http%3A//marketingparatecnologia.com/" class="btnGp btnShare" title="Google+"><span class="gpCount">0</span></a>
-        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//marketingparatecnologia.com/&title=Mar.Tech&summary=&source=" class="btnLi btnShare" title="LinkedIn"><span class="liCount">0</span></a>
+        <a target="_blank" href="https://twitter.com/home?status=http%3A//rockcontent.com/guia-da-marca/" class="btnTw btnShare" title="Twitter"><span class="twCount">0</span></a>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//rockcontent.com/guia-da-marca/" class="btnFb btnShare" title="Facebook"><span class="fbCount">0</span></a>
+        <a target="_blank" href="https://plus.google.com/share?url=http%3A//rockcontent.com/guia-da-marca/" class="btnGp btnShare" title="Google+"><span class="gpCount">0</span></a>
+        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//rockcontent.com/guia-da-marca/&title=Guia%20da%20Marca%20da%20Rock%20Content&summary=&source=" class="btnLi btnShare" title="LinkedIn"><span class="liCount">0</span></a>
     </div>
     <ul class="share-mobile guia-da-marca">
-        <li><a target="_blank" href="https://twitter.com/home?status=http%3A//marketingparatecnologia.com/" class="btnTw-mobile btnShare" title="Twitter"><span class="twCount">0</span></a></li>
-        <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//marketingparatecnologia.com/" class="btnFb-mobile btnShare" title="Facebook"><span class="fbCount">0</span></a></li>
-        <li><a target="_blank" href="https://plus.google.com/share?url=http%3A//marketingparatecnologia.com/" class="btnGp-mobile btnShare" title="Google+"><span class="gpCount">0</span></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//marketingparatecnologia.com/&title=Mar.Tech&summary=&source=" class="btnLi-mobile btnShare" title="LinkedIn"><span class="liCount">0</span></a></li>
+        <li><a target="_blank" href="https://twitter.com/home?status=http%3A//rockcontent.com/guia-da-marca/" class="btnTw-mobile btnShare" title="Twitter"><span class="twCount">0</span></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//rockcontent.com/guia-da-marca/" class="btnFb-mobile btnShare" title="Facebook"><span class="fbCount">0</span></a></li>
+        <li><a target="_blank" href="https://plus.google.com/share?url=http%3A//rockcontent.com/guia-da-marca/" class="btnGp-mobile btnShare" title="Google+"><span class="gpCount">0</span></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//rockcontent.com/guia-da-marca/&title=Guia%20da%20Marca%20da%20Rock%20Content&summary=&source=" class="btnLi-mobile btnShare" title="LinkedIn"><span class="liCount">0</span></a></li>
     </ul>
     
     <div id="jumbotron">
