@@ -1,62 +1,27 @@
-# Middleman with Markdown Submodule Example
+# [Start Bootstrap](http://startbootstrap.com/) - [Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/)
 
-This is an example project using [Middleman](https://middlemanapp.com) and pulling in our [Style Guide](https://github.com/mailchimp/content-style-guide) as a submodule.
+[Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) is an off canvas sidebar navigation template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-## Installation
-Requires Ruby 2.2.5 and Bundler
+## Getting Started
 
-Clone the repo:
-``` bash
-git clone git@github.com:mailchimp/middleman-with-md-submodule-example.git
-cd middleman-with-md-submodule-example
-```
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/)
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git`
+* Fork the repo
 
-Install dependencies:
-``` bash
-bundle install
-```
+## Bugs and Issues
 
-Initialize the submodule:
-``` bash
-git submodule init
-```
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/simple-sidebar/).
 
-Update the submodule:
-``` bash
-git submodule update
-```
+## Creator
 
-Run it:
-``` bash
-bundle exec middleman server
-```
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-View it at `http://localhost:4567/`
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-## Add Your Own Style Guide
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-Fork your own version of our [Style Guide](https://github.com/mailchimp/content-style-guide). You'll need to change out the submodule with your forked version.
+## Copyright and License
 
-First, remove the old Style Guide:
-
-``` bash
-git submodule deinit content-style-guide
-git rm content-style-guide
-```
-
-Then go to your fork of the Style Guide on GitHub, click on the `Clone or download` button, copy the `Clone with SSH` url, and paste it in this line:
-
-``` bash
-git submodule add {paste your submodule GitHub repo url}
-```
-
-Then:
-``` bash
-git submodule init
-```
-
-As you make changes to your copy of the Style Guide submodule, you'll need to resync it with:
-
-``` bash
-git submodule update
-```
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/gh-pages/LICENSE) license.
