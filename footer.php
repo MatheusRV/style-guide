@@ -1,7 +1,7 @@
   <div class="container" id="footer">
     <footer>
       <p>© 2013-2017 Rock Content. Todos os direitos reservados.<br />
-      Feito com ❤ no San Pedro Valley. O projeto <b>Guia de Estilo Rock Content</b> é Open Source.</p>
+      Feito com ❤ no San Pedro Valley. O projeto <a href="https://github.com/rockcontent/style-guide" target="_blank" title="Guia de Estilo Rock Content">Guia de Estilo Rock Content</a> é open source.</p>
     </footer>
   </div>
   <div class="container-fluid">
@@ -27,6 +27,9 @@ e.preventDefault();
 $("#wrapper").toggleClass("toggled");
 });
 </script>
+
+<!-- AddThis Share -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c1a62629d0c176"></script>
 
 </body>
 
